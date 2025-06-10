@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css" />
+
+</head>
+
+
+<body>    
+    <div ID = "contentContainer" class ="Table">
+
+        
+    </div>
+    <script>
+        // Get a reference to the content container
+        const contentContainer = document.getElementById("contentContainer");
+    
+        // Use the fetch API to load content from bookingview.php
+        fetch("bookingview.php")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Insert the content into the content container
+                contentContainer.innerHTML = data;
+            })
+            // Report loading error
+            .catch(error => {
+                console.error("Error:", error);
+            });
+            
+    </script>
+</body>
+</html>
