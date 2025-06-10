@@ -1,0 +1,220 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+.wrapper {
+    display: flex;
+    height: auto;
+}
+ 
+.sidebar {
+    width: 250px;
+    background-color: #5a8558;
+    color: #ecf0f1;
+    padding: 15px 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+ 
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+ 
+.user-profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    margin-left: 20px;
+}
+ 
+.profile-image{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+ 
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+ 
+.sidebar ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.sidebar ul li:hover {
+    background-color: #0b3314;
+}
+ 
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+ 
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    text-align: center;
+    margin: 0;
+}*/
+
+.profile-card {
+    max-width: 1200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+}
+ 
+.profile-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+ 
+button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+ 
+.booking-card {
+    max-width: 1200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+}
+ 
+.book-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust as needed for spacing */
+    justify-content: space-between; /* To evenly distribute the columns */
+    align-items: center; /* To vertically center the text */
+}
+ 
+/* Ensure each h5 takes one-third of the available width */
+.book-info h5 {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and gap as needed */
+    text-align: center; /* Optional: To center the text in each column */
+}
+ 
+ 
+.column {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width and gap as needed */
+    text-align: center;
+}
+ 
+h5 {
+    margin: 0;
+}
+ 
+.approved, .pending, .cancelled {
+    margin: 5px 0;
+}
+ 
+button#reviewButton {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ 
+/* Styles for modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+/* Styles for modal content */
+.modal-content {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+ 
+/* Styles for close button */
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+ 
+.close-button:hover {
+    color: red;
+}
+ 
+/* Existing CSS remains the same */
+ 
+/* Styles for star ratings */
+.star-rating {
+    font-size: 24px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+ 
+.star {
+    color: #ccc;
+    transition: color 0.2s;
+}
+ 
+.star.active {
+    color: #ffdb58; /* Color of filled stars */
+}
+
+/* styles.css */
+.profile-marker {
+    width: 50px; /* Diameter of the circle */
+    height: 50px; /* Diameter of the circle */
+    background-color: #007bff; /* Background color */
+    color: white; /* Text color */
+    border-radius: 50%; /* Makes the shape circular */
+    display: flex; /* Aligns children (text) */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 20px; /* Font size for the initials */
+    font-weight: bold; /* Font weight for better visibility */
+    text-transform: uppercase; /* Make initials uppercase */
+    text-align: center; /* Center the text */
+}

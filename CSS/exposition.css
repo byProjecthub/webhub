@@ -1,0 +1,74 @@
+/* Ensure that the images do not exceed their container's width */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* The .navbar-brand font size may be too large for mobile screens. We can resize it for smaller screens. */
+.navbar-brand {
+    font-size: 24px;
+}
+
+/* Adjusting font size for smaller devices */
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+    .activities-heading h1 {
+        font-size: 24px;
+    }
+    .card h5.card-title {
+        font-size: 16px;
+    }
+    .footer-Container .icons i {
+        font-size: 20px;
+    }
+    .footer-nav ul li a {
+        font-size: 14px;
+    }
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+/* Adjusting for very small devices */
+@media only screen and (max-width: 576px) {
+    .activities-heading h1 {
+        font-size: 20px;
+    }
+    .card h5.card-title {
+        font-size: 14px;
+    }
+    .footer-Container .icons i {
+        font-size: 18px;
+    }
+    .footer-nav ul li a {
+        font-size: 12px;
+    }
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
+
+/* Giving some breathing room for the cards */
+.card {
+    margin: 15px 0;
+}
+
+/* Adjusting margins for smaller devices */
+@media only screen and (max-width: 768px) {
+    .card {
+        margin: 10px 0;
+    }
+}
+
+
+
+@media  screen and (max-width: 820px) {
+    .col{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    
+}

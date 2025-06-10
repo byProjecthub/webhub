@@ -1,0 +1,96 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat&family=Poppins:wght@600&display=swap");
+:root {
+  --bg-color: #fff;
+
+  --text-color: #0b3314;
+
+  --second-color: #5a8558;
+
+  --main-color: #20b333;
+
+  --big-font: 4.5rem;
+
+  --h2-font: 2rem;
+
+  --p-font: 1.1rem;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: var(--bg-color);
+}
+.containers{
+    /*border: 2px solid rgb(214, 210, 210);*/
+    
+    margin: 20px;
+    width: 550px;
+    padding: 55px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow:10px 5px 25px rgb(151, 151, 151) ;
+}
+.containers h1{
+    text-align: center;
+}
+/*///////////////////*/
+/*Responsive form    */
+/*///////////////////*/
+@media (max-width: 600px){
+  .containers{
+    /*border: 2px solid rgb(214, 210, 210);*/
+    margin: 20px;
+    width: 90%;
+    padding: 55px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow:10px 5px 25px rgb(151, 151, 151) ;
+}
+
+}
+
+/*@media (max-width: 768px){
+  .containers{
+    border: 2px solid rgb(214, 210, 210);
+    margin: 20px;
+    width: 90%;
+    height: 00px;
+    padding: 55px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow:10px 5px 25px rgb(151, 151, 151) ;
+}
+.containers h1{
+  text-align: center;
+  font-size: 4rem;
+}
+.containers .label{
+ font-size: 1.5rem;
+}
+.containers input{
+  font-size: 1rem;
+  height: 60px;
+ }
+ .containers button{
+  
+  font-size: 1.5rem;
+  height: 80px;
+ }
+ 
+
+}*/
