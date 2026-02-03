@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Reviews</title>
+    <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+    <div ID ="reviewContainer" class ="reviews"></div>
+    <script>
+        // Get a reference to the content container
+        const contentContainer = document.getElementById("reviewContainer");
+    
+        // Use the fetch API to load content from bookingview.php
+        fetch("getReviews.php")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Insert the content into the content container
+                contentContainer.innerHTML = data;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+    </script>
+
+    
+</body>
+</html>
